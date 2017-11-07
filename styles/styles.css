@@ -1,8 +1,16 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 .productDisplay {
     font-family: futura;
-    width: 80%;
+    width: 75%;
     text-align: justify;
-    color: darkslategray;    
+    color: darkslategray;
+    padding: 15px;  
 }
 
 .hidden {
@@ -80,7 +88,7 @@
 }
 
 .jumbotron {
-    height: 350px;
+    height: 270px;
     margin:0;
     padding: 0;
     justify-content: space-around;
@@ -99,7 +107,9 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: -50px 0 0px;
+    margin: -52px 0 0px;
+    border-top: solid 2px #335866;
+    border-bottom: solid 2px #335866;
 }
 
 nav a {
@@ -121,5 +131,36 @@ nav a div {
 
 .nav_button:hover {
     background-color: rgba(51, 88, 102, .5);
+    color: white;
+}
+
+footer {
+    height: 50px;
+    background-color: #335866;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer h3 {
+    font-weight: 300;
+    color: white;
+    padding-right: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page__sidebar {
+    width: 20%;
+    background-color: rgba(51, 88, 102, .5);
+}
+
+ol li {
+    list-style: square;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 10px;
     color: white;
 }

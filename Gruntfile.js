@@ -44,5 +44,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-browserify")
 
 	// Default task(s).
-	grunt.registerTask("default", ["watch", "eslint", "browserify", "uglify"])
+	grunt.registerTask("default", ["eslint", "browserify", "uglify", "watch"])
 }
