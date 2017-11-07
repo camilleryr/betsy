@@ -1,7 +1,8 @@
 .productDisplay {
     font-family: futura;
     width: 80%;
-    text-align: justify;    
+    text-align: justify;
+    color: darkslategray;    
 }
 
 .hidden {
@@ -27,8 +28,36 @@
 
 .category {
     display: inline-block;
-    border: solid 1px black;
+    border: solid 1px darkslategray;;
     padding: 5px;
     margin-right: 10px;
     border-radius:5px;
 }
+
+.moreInfo {
+    font-family: serif;
+}
+
+.moreInfo > h3 {
+    background-color: slategray;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.review {
+    padding: 20px;
+    color: darkslategray;
+    border-bottom: solid 1px darkslategray;
+}
+
+.review h3 {
+    font-size: 1.4em;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.review p {
+    margin-top: 5px;
+}
+
