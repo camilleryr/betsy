@@ -5,12 +5,14 @@ const reviewFactory = require("./reviewFactory")
 const categoryFactory = require("./categoryFactory")
 const productReviewFactory = require("./productReviewFactory")
 const productCategoryFactory = require("./productCategoryFactory")
+const navFactory = require("./navFactory")
 
 const productsTable = []
 const reviewTable = []
 const categoryTable = []
 const productsReviewsTable = []
 const productsCategoryTable = []
+const navTable = []
 
 //Build Product Table
 productsTable.push(productFactory([
@@ -130,6 +132,12 @@ productsCategoryTable.push(productCategoryFactory([2, 7]))
 productsCategoryTable.push(productCategoryFactory([3, 1]))
 productsCategoryTable.push(productCategoryFactory([3, 2]))
 
+//Build navTable
+navTable.push(navFactory("Products"))
+navTable.push(navFactory("Categories"))
+navTable.push(navFactory("Orders"))
+navTable.push(navFactory("Logout"))
+
 //Build database
 const database = {
 	"productsTable": productsTable,
@@ -137,6 +145,7 @@ const database = {
 	"categoryTable": categoryTable,
 	"productsReviewsTable": productsReviewsTable,
 	"productsCategoryTable": productsCategoryTable,
+	"navTable": navTable
 }
 
 module.exports = database

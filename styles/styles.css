@@ -61,3 +61,65 @@
     margin-top: 5px;
 }
 
+.static_header {
+    position : absolute;
+    top: 0;
+    height: 50px;
+    width: 97%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_image {
+    align-self: center;
+    height: 30px;
+    padding: 5px;
+}
+
+.jumbotron {
+    height: 350px;
+    margin:0;
+    padding: 0;
+    justify-content: space-around;
+    display: flex;
+    background-image: url("http://new.graphicpanic.com/wp-content/uploads/2015/09/white-paper-craft-powerpoint-background.jpg");
+}
+
+.jumbotron h1 {
+    align-self: center;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 6em;
+    color: #335866;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: -50px 0 0px;
+}
+
+nav a {
+    text-align: center;
+    flex: 1;
+    align-self: center;
+    text-decoration: none;
+    font-family: serif;
+    color: #335866;
+    font-size: 1.2em;
+    height: 50px;
+    display: flex;
+    justify-content: center
+}
+
+nav a div {
+    align-self: center;
+}
+
+.nav_button:hover {
+    background-color: rgba(51, 88, 102, .5);
+    color: white;
+}
